@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="300.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.filetransfer.ProcessController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="510.0" spacing="225.0">
+         <children>
+            <Label fx:id="filePathLabel" text="File Path:">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin></Label>
+            <Label fx:id="loadingProgressLabel" text="Loading Progress:" />
+         </children>
+      </HBox>
+      <ListView fx:id="processes" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="close" mnemonicParsing="false" prefHeight="46.0" prefWidth="143.0" text="Cancel">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+   </children>
+</VBox>

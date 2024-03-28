@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="1128.0" maxWidth="940.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="470.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ksan.lab3.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <VBox prefHeight="541.0" prefWidth="430.0">
+      <children>
+         <HBox alignment="BASELINE_LEFT" prefHeight="37.0" prefWidth="430.0">
+            <children>
+               <Label text="Storage IP:">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </HBox.margin>
+               </Label>
+               <TextField fx:id="serverIp" alignment="TOP_LEFT" prefHeight="26.0" prefWidth="311.0" />
+            </children>
+         </HBox>
+         <Label text="Input(text only):">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin></Label>
+         <TextArea fx:id="in" prefHeight="148.0" prefWidth="421.0">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+         </TextArea>
+         <Label text="Output(text only):">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin></Label>
+         <TextArea fx:id="out" layoutX="15.0" layoutY="80.0" prefHeight="146.0" prefWidth="421.0">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+         </TextArea>
+         <HBox alignment="BASELINE_LEFT" prefHeight="27.0" prefWidth="430.0">
+            <children>
+               <Label text="Opened file:">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Label>
+               <Label fx:id="fileOpened" alignment="CENTER" text="No file opened" />
+            </children>
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         </HBox>
+         <Button fx:id="open" mnemonicParsing="false" onAction="#OpenFile" text="Open file">
+            <VBox.margin>
+               <Insets bottom="10.0" left="5.0" top="10.0" />
+            </VBox.margin></Button>
+         <HBox alignment="BASELINE_LEFT" prefHeight="28.0" prefWidth="430.0">
+            <children>
+               <TextField fx:id="request" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="325.0">
+                  <HBox.margin>
+                     <Insets right="5.0" />
+                  </HBox.margin>
+               </TextField>
+               <Button fx:id="send" mnemonicParsing="false" onAction="#Request" text="Send">
+                  <HBox.margin>
+                     <Insets left="5.0" />
+                  </HBox.margin>
+               </Button>
+            </children>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         </HBox>
+      </children>
+   </VBox>
+</VBox>

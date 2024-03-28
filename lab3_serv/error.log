@@ -1,0 +1,6 @@
+[01-Apr-2023 19:13:59 Europe/Minsk] PHP Warning:  Undefined array key "REQUEST_METHOD" in C:\Учебные файлы\KSaN\lab3_serv\ksan_serv.php on line 2
+[01-Apr-2023 19:13:59 Europe/Minsk] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\Учебные файлы\KSaN\lab3_serv\ksan_serv.php:2) in C:\Учебные файлы\KSaN\lab3_serv\ksan_serv.php on line 3
+[01-Apr-2023 19:14:24 Europe/Minsk] PHP Warning:  Undefined variable $method in C:\Учебные файлы\KSaN\lab3_serv\ksan_serv.php on line 22
+[01-Apr-2023 19:14:24 Europe/Minsk] PHP Warning:  Undefined variable $method in C:\Учебные файлы\KSaN\lab3_serv\ksan_serv.php on line 43
+[01-Apr-2023 19:14:24 Europe/Minsk] PHP Warning:  Undefined variable $method in C:\Учебные файлы\KSaN\lab3_serv\ksan_serv.php on line 61
+[01-Apr-2023 19:14:24 Europe/Minsk] PHP Warning:  Undefined variable $method in C:\Учебные файлы\KSaN\lab3_serv\ksan_serv.php on line 63

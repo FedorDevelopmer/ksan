@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="511.0" prefWidth="478.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ksan.lab2.ui.lab2_ui.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+   <children>
+      <Pane fx:id="scene" prefHeight="501.0" prefWidth="438.0">
+         <children>
+             <ListView fx:id="chat_field" layoutX="33.0" layoutY="67.0" prefHeight="324.0" prefWidth="372.0" />
+            <Button fx:id="send" layoutX="365.0" layoutY="404.0" mnemonicParsing="false" onAction="#MessageSent" text="Send" />
+            <TextField fx:id="message" layoutX="33.0" layoutY="404.0" prefHeight="25.0" prefWidth="316.0" />
+            <Label layoutX="33.0" layoutY="438.0" text="Enter /help to see available commands" />
+            <Label fx:id="ip_field" layoutX="306.0" layoutY="25.0" text="IP-адрес: 127.0.0.1" />
+            <Label fx:id="port_field" layoutX="306.0" layoutY="43.0" text="Порт: 5005" />
+            <Label fx:id="name_field" layoutX="33.0" layoutY="15.0" text="Ваше имя: Unknown ">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="43.0" prefHeight="17.0" prefWidth="184.0" text="Статус подключения:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="status" layoutX="166.0" layoutY="43.0" text="не подключен" textFill="#ff0000">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</VBox>

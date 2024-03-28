@@ -1,0 +1,175 @@
+[{
+		"graphicName": "#hostLabel",
+		"en": "Host:",
+		"ru": "Хост:"
+	},
+	{
+		"graphicName": "#portLabel",
+		"en": "Port:",
+		"ru": "Порт:"
+	},
+	{
+		"graphicName": "#loginLabel",
+		"en": "Login:",
+		"ru": "Логин:"
+	},
+	{
+		"graphicName": "#passwordLabel",
+		"en": "Password:",
+		"ru": "Пароль:"
+	},
+	{
+		"graphicName": "#connect",
+		"enConnect":"Connect",
+		"enDisconnect":"Disconnect",
+		"enCancel":"Cancel",
+		"ruConnect":"Подключиться",
+		"ruDisconnect":"Отключиться",
+		"ruCancel":"Отмена"
+	},
+	{
+		"graphicName": "#remDestDir",
+		"en": "Remote destination dir.:",
+		"ru": "Удаленная целевая папка:"
+	},
+	{
+		"graphicName": "#localDestDir",
+		"en": "Local destination dir.:",
+		"ru": "Локальная целевая папка:"
+	},
+	{
+		"graphicName": "#upload",
+		"en": "Upload",
+		"ru": "Выгрузить"
+	},
+	{
+		"graphicName": "#clearUpload",
+		"en": "Clear queue",
+		"ru": "Очистить очередь"
+	},
+	{
+		"graphicName": "#download",
+		"en": "Download",
+		"ru": "Загрузить"
+	},
+	{
+		"graphicName": "#clearDownload",
+		"en": "Clear queue",
+		"ru": "Очистить очередь"
+	},
+	{
+		"graphicName": "#yourFilesLabel",
+		"en": "Your files:",
+		"ru": "Ваши файлы:"
+	},
+	{
+		"graphicName": "#remoteDeviceLabel",
+		"en": "Remote device files:",
+		"ru": "Файлы удаленного устройства:"
+	},
+	{
+		"graphicName": "#localDirectory",
+		"en": "Local directory:",
+		"ru": "Локальная папка:"
+	},
+	{
+		"graphicName": "#remoteDirectory",
+		"en": "Remote directory:",
+		"ru": "Удаленная папка:"
+	},
+	{
+		"graphicName": "#filePathLabel",
+		"en": "File Path:",
+		"ru": "Путь к файлу:"
+	},
+	{
+		"graphicName": "#loadingProgressLabel",
+		"en": "Loading Progress:",
+		"ru": "Прогресс загрузки:"
+	},
+	{
+		"graphicName": "#close",
+		"enCancel":"Cancel",
+		"enClose":"Close",
+		"ruCancel":"Отмена",
+		"ruClose":"Закрыть"
+	},
+	{
+		"graphicName": "#uploadInstantly",
+		"en": "Upload to remote instantly",
+		"ru": "Выгрузить моментально"
+	},
+	{
+		"graphicName": "#addToUploadQueue",
+		"en": "Add to upload queue",
+		"ru": "Добавить в очередь на выгрузку"
+	},
+	{
+		"graphicName": "#downloadInstantly",
+		"en": "Download from remote instantly",
+		"ru": "Загрузить моментально"
+	},
+	{
+		"graphicName": "#addToDownloadQueue",
+		"en": "Add to download queue",
+		"ru": "Добавить в очередь на загрузку"
+	},
+	{
+		"graphicName": "#removeFromQueue",
+		"en": "Remove",
+		"ru": "Удалить"
+	},
+	{
+		"graphicName": "#removeFromRemoteQueue",
+		"en": "Remove",
+		"ru": "Удалить"
+	},
+	{
+		"graphicName": "#language",
+		"en": "Language",
+		"ru": "Язык"
+	},
+	{
+		"graphicName": "#help",
+		"en": "Help",
+		"ru": "Справка"
+	},
+	{
+		"graphicName": "#about",
+		"en": "About",
+		"ru": "О программе"
+	},
+	{
+		"graphicName": "#rus",
+		"en": "Russian",
+		"ru": "Русский"
+	},
+	{
+		"graphicName": "#eng",
+		"en": "English",
+		"ru": "Английский"
+	},
+	{
+		"graphicName": "#title",
+		"en": {
+			"header": "Rules of using SimpleFTP client:",
+			"title": "SimpleFTP client usage information",
+			"par1": "1)Transfer files names should only contain English symbols,Numbers,Spaces and no special characters(№,$,etc.)\n",
+			"par2": "2)Check your FTP server for enabled raw FTP connection for proper usage of client\n",
+			"par3": "3)In case of long connection or error in connection request you can cancel connection with server\n",
+			"par4": "4)Transfer system-used files can cause errors in sending due to OS restrictions\n",
+			"par5": "5)After transfer cancellation last transferred file will be deleted as incomplete\n",
+			"credits": "Saprankov F. A.,gr. 151001,BSUIR 2023"
+		},
+		"ru": {
+			"header": "Правила использования SimpleFTP клиента:",
+			"title": "Информация об использовании SimpleFTP клиента",
+			"par1": "1)Имена передаваемых файлов должны содержать только английские символы,цифры,пробелы и никаких специальных символов(№,$,и т.д.)\n",
+			"par2": "2)Проверяйте ваш FTP-сервер на наличие возможности соединения по незащищенному FTP для корректной работы клиента.\n",
+			"par3": "3)В случае слишком длительного соединения или ошибки в запросе на соединение вы можете отменить соединение с сервером\n",
+			"par4": "4)Передача используемых системой файлов может вызвать ошибки при отправке из-за ограничений ОС\n",
+			"par5": "5)После отмены передачи последний переданный файл будет удален как загруженный не до конца\n",
+			"credits": "Сапраньков Ф. А., гр. 151001, БГУИР 2023"
+		}
+	}
+]

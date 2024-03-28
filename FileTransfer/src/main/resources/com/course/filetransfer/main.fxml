@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainContainer" alignment="TOP_CENTER" prefHeight="806.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.filetransfer.Controller">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu fx:id="language" mnemonicParsing="false" text="Language">
+            <items>
+              <MenuItem fx:id="eng" mnemonicParsing="false" text="English" />
+                  <MenuItem fx:id="rus" mnemonicParsing="false" text="Russian" />
+            </items>
+          </Menu>
+          <Menu fx:id="help" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox alignment="CENTER" prefHeight="47.0" prefWidth="562.0" spacing="10.0">
+         <children>
+            <Label fx:id="hostLabel" text="Host:" />
+            <TextField fx:id="host" prefHeight="26.0" prefWidth="136.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="portLabel" text="Port:" />
+            <TextField fx:id="port" layoutX="43.0" layoutY="21.0" prefHeight="26.0" prefWidth="73.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="loginLabel" layoutX="197.0" layoutY="25.0" prefHeight="18.0" prefWidth="40.0" text="Login:" />
+            <TextField fx:id="login" layoutX="43.0" layoutY="21.0" prefHeight="26.0" prefWidth="109.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="passwordLabel" layoutX="305.0" layoutY="24.0" prefHeight="18.0" prefWidth="60.0" text="Password:" />
+            <PasswordField fx:id="password" prefHeight="26.0" prefWidth="120.0" />
+            <ProgressIndicator fx:id="connectProgress" prefHeight="49.0" prefWidth="42.0" progress="0.0" />
+            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="164.0">
+               <children>
+            
+                             <Button fx:id="connect" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#connectionButton" prefHeight="26.0" prefWidth="115.0" text="Connect">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <ChoiceBox fx:id="connectionHistory" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="24.0" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="240.0" prefWidth="838.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="240.0" prefWidth="360.0">
+               <children>
+                  <HBox prefHeight="26.0" prefWidth="283.0">
+                     <children>
+                        <Button fx:id="remDestDir" mnemonicParsing="false" prefHeight="26.0" prefWidth="170.0" text="Remote destination dir.:" />
+                        <TextField fx:id="remoteDestination" prefHeight="26.0" prefWidth="190.0" />
+                     </children>
+                  </HBox>
+                  <ListView fx:id="uploadFiles" prefHeight="159.0" prefWidth="302.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Button fx:id="upload" disable="true" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="Upload files" />
+                        <Button fx:id="clearUpload" disable="true" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="Clear queue" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <ImageView fitHeight="150.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox alignment="TOP_CENTER" prefHeight="265.0" prefWidth="360.0">
+               <children>
+                  <HBox prefHeight="20.0" prefWidth="262.0">
+                     <children>
+                        <Button fx:id="localDestDir" mnemonicParsing="false" prefHeight="26.0" prefWidth="170.0" text="Local destination dir.:" />
+                        <TextField fx:id="localDestination" prefHeight="26.0" prefWidth="192.0" />
+                     </children>
+                  </HBox>
+                  <ListView fx:id="downloadFiles" prefHeight="160.0" prefWidth="304.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Button fx:id="download" disable="true" mnemonicParsing="false" prefHeight="38.0" prefWidth="118.0" text="Download files" />
+                        <Button fx:id="clearDownload" disable="true" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" text="Clear queue" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="419.0" prefWidth="829.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="419.0" prefWidth="420.0">
+               <children>
+                  <Label fx:id="yourFilesLabel" text="Your files:" />
+                  <HBox prefHeight="27.0" prefWidth="270.0">
+                     <children>
+                        <Button fx:id="localDirectory" mnemonicParsing="false" prefHeight="26.0" prefWidth="125.0" text="Local directory:" />
+                        <TextField fx:id="localDir" prefHeight="26.0" prefWidth="270.0" />
+                        <Button fx:id="updateLocal" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" />
+                     </children>
+                  </HBox>
+                  <TreeView fx:id="yourFiles" layoutX="10.0" layoutY="29.0" onMouseClicked="#FileChosen" prefHeight="351.0" prefWidth="351.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></TreeView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="114.0" layoutY="10.0" prefHeight="419.0" prefWidth="420.0">
+               <children>
+                  <Label fx:id="remoteDeviceLabel" text="Remote device files:" />
+                  <HBox prefHeight="23.0" prefWidth="351.0">
+                     <children>
+                        <Button fx:id="remoteDirectory" mnemonicParsing="false" prefWidth="125.0" text="Remote directory:" />
+                        <TextField fx:id="remoteDir" prefHeight="26.0" prefWidth="270.0" />
+                        <Button fx:id="updateRemote" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" />
+                     </children>
+                  </HBox>
+                  <TreeView fx:id="remoteFiles" onMouseClicked="#RemoteFileChosen" prefHeight="351.0" prefWidth="351.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></TreeView>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin></HBox>
+
+
+   </children>
+</VBox>
